@@ -7,14 +7,6 @@ export default antfu({
         semi: true,
     },
 },
-// Legacy config - see https://github.com/antfu/eslint-config?tab=readme-ov-file#usage
-// ...compat.config({
-//     extends: ['plugin:tailwindcss/recommended'],
-//     rules: {
-//         'tailwindcss/no-custom-classname': 'off',
-//         'tailwindcss/migration-from-tailwind-2': 'off',
-//     },
-// }),
 {
     rules: {
         curly: ['error', 'all'],
