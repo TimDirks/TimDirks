@@ -6,8 +6,7 @@ export default antfu({
         quotes: 'single',
         semi: true,
     },
-},
-{
+}, {
     rules: {
         curly: ['error', 'all'],
         'node/prefer-global/process': 0,
