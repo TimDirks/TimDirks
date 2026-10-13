@@ -15,6 +15,8 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/google-fonts',
+    '@nuxtjs/i18n',
+    '@nuxt/image',
   ],
 
   vite: {
@@ -41,6 +43,15 @@ export default defineNuxtConfig({
         wght: '100..700',
       },
     },
+  },
+
+  // Nuxt i18n (https://i18n.nuxtjs.org)
+  i18n: {
+    strategy: 'prefix_except_default',
+    defaultLocale: 'en',
+    locales: [
+      {code: 'en', iso: 'en-GB', file: 'en-GB.ts', name: 'English'},
+    ],
   },
   /* </Nuxt module options> */
 
