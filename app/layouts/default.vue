@@ -5,5 +5,7 @@
         <main class="z-10">
             <slot />
         </main>
+
+        <Footer class="mt-8 py-6 md:mt-12" />
     </div>
 </template>
