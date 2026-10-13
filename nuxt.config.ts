@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
     '@nuxt/image',
+    '@nuxt/icon/module',
   ],
 
   vite: {
