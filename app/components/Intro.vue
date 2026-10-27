@@ -42,5 +42,11 @@ onMounted(() => {
                 </div>
             </div>
         </div>
+
+        <UiButtonIcon
+            :class="{ 'opacity-0': hideIntro }"
+            class="bottom-1/8 delay-1500 !absolute animate-bounce transition-opacity duration-1000"
+            icon="ph:caret-down"
+        />
     </div>
 </template>
