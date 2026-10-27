@@ -49,7 +49,7 @@ onMounted(() => {
 
         <UiButtonIcon
             :class="{ 'opacity-0': hideIntro }"
-            class="bottom-1/8 delay-1500 !absolute animate-bounce transition-opacity duration-1000"
+            class="bottom-1/8 delay-1500 !absolute animate-bounce transition-opacity duration-1000 cursor-pointer"
             icon="ph:caret-down"
             @click="emit('scrollDown')"
         />

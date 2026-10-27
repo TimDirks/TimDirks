@@ -43,6 +43,7 @@ onMounted(() => {
 
 <template>
     <div
+        id="magic-cursor"
         ref="cursor"
         :class="{ 'opacity-0': cursorHidden }"
         class="pointer-events-none fixed hidden size-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white mix-blend-difference transition-opacity duration-300 lg:block"
