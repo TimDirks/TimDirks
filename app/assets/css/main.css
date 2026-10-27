@@ -12,6 +12,8 @@
 
   --animate-wiggle: wiggle 1s linear infinite;
 
+  --shadow-t-md: 0 -5px 5px 0;
+
   /* Custom Animations */
   @keyframes wiggle {
     0%, 100% {
