@@ -20,6 +20,7 @@ const localePath = useLocalePath();
 
 <template>
     <component
+        v-hide-magic-cursor
         :is="component"
         :to="to && localePath(to)"
         class="
