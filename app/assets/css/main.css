@@ -10,22 +10,12 @@
   --text-10xl: 9.5rem;
   --text-10xl--line-height: 9rem;
 
+  --animate-look-left-right: look-left-right 2s ease-in-out 1;
+  --animate-walk-left: walk-left 2s ease-in-out 1;
   --animate-wiggle: wiggle 1s linear infinite;
+  --animate-wiggle-left: wiggle-left 2s ease-in-out 1;
 
   --shadow-t-md: 0 -5px 5px 0;
-
-  /* Custom Animations */
-  @keyframes wiggle {
-    0%, 100% {
-      transform: rotateZ(0);
-    }
-    25% {
-      transform: rotateZ(-5deg);
-    }
-    75% {
-      transform: rotateZ(5deg);
-    }
-  }
 }
 
 html {

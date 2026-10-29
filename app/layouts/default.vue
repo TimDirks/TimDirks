@@ -10,4 +10,6 @@
 
         <Footer class="mt-8 py-6 md:mt-12" />
     </div>
+
+    <PopUpSprite class="z-10 pointer-events-none lg:cursor-none" />
 </template>
