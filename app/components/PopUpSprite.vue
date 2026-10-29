@@ -2,8 +2,8 @@
 let popUpTimer = 0;
 
 const randomPosition = ref<string[]>(['bottom: 0']);
-const spriteAngle = ref<number>(0);
 const spriteAnimationClass = ref<string>('translate-y-full');
+const spriteAnimationFlipped = ref<boolean>(false);
 const spriteImage = ref();
 
 const spriteAngleOffsets: Record<string, any> = {
@@ -15,11 +15,8 @@ const spriteAngleOffsets: Record<string, any> = {
 
 const spriteAnimationClasses = [
     'animate-look-left-right',
-    'animate-look-right-left',
     'animate-walk-left',
-    'animate-walk-right',
     'animate-wiggle-left',
-    'animate-wiggle-right',
 ];
 
 function generateNewPosition() {
@@ -36,15 +33,13 @@ function generateNewPosition() {
     const huggingEdgeOffset = placementOrder[1] === topOrBottom ? -1 : -0.5;
 
     // Generate a random degree with 1 decimal point between -5.0 and 5.0 for sprite rotation.
-    const angle = ~~(Math.random() * 100) / 10 - 5;
-    const angleOffset = spriteAngleOffsets[placementOrder[1]];
-
-    spriteAngle.value = angle + angleOffset;
+    const randomTilt = ~~(Math.random() * 100) / 10 - 5;
+    const angleOffset = spriteAngleOffsets[placementOrder[1]] + randomTilt;
 
     randomPosition.value = [
         `${placementOrder[0]}: ${edgeOffset}%`,
         `${placementOrder[1]}: ${huggingEdgeOffset}rem`,
-        `transform: rotateZ(${spriteAngle.value}deg)`,
+        `transform: rotateZ(${angleOffset}deg)`,
     ];
 
     pickNewAnimation();
@@ -61,7 +56,11 @@ function onAnimationEnd() {
 }
 
 function pickNewAnimation() {
+    // Choose a random animation index from the list.
     const randomAnimationIndex = ~~(Math.random() * spriteAnimationClasses.length);
+
+    // Randomize whether the animation should be flipped.
+    spriteAnimationFlipped.value = Math.random() < 0.5;
 
     spriteAnimationClass.value = spriteAnimationClasses[randomAnimationIndex];
 }
@@ -103,7 +102,7 @@ onBeforeUnmount(() => {
     >
         <NuxtImg
             ref="spriteImage"
-            :class="spriteAnimationClass"
+            :class="[spriteAnimationClass, {'-scale-x-100': spriteAnimationFlipped}]"
             class="h-16 md:h-24"
             src="/img/sprite-tim.png"
         />

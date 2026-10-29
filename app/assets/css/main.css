@@ -11,12 +11,9 @@
   --text-10xl--line-height: 9rem;
 
   --animate-look-left-right: look-left-right 2s ease-in-out 1;
-  --animate-look-right-left: look-right-left 2s ease-in-out 1;
   --animate-walk-left: walk-left 2s ease-in-out 1;
-  --animate-walk-right: walk-right 2s ease-in-out 1;
   --animate-wiggle: wiggle 1s linear infinite;
   --animate-wiggle-left: wiggle-left 2s ease-in-out 1;
-  --animate-wiggle-right: wiggle-right 2s ease-in-out 1;
 
   --shadow-t-md: 0 -5px 5px 0;
 }
