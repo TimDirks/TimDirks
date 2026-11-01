@@ -1,75 +1,26 @@
-# Nuxt Minimal Starter
+<div style="display: flex; justify-content: center">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TimDirks/TimDirks/main/name-light.png">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TimDirks/TimDirks/main/name-dark.png">
+      <img alt="Tim Dirks" src="name-dark.png" height="96px">
+    </picture>
+</div>
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Hey! 👋
+I'm Tim, a web developer from The Netherlands
 
-## Setup
+- 👨‍💻 6+ years of experience in Front-end development
+- 👨‍🏫 Tutored and guided junior developers
+- ✨ Big fan of projects with beautiful design and animations
+- 🌍 Avid traveller
 
-Make sure to install dependencies:
+## Skills
 
-```bash
-# npm
-npm install
+- 👨‍💻 TypeScript, JavaScript, C#, PHP, Regex
+- 🛠 Vue.js, Nuxt, React
+- 🎨 SASS, CSS
+- A lot more
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Contact
+- [timdirks.nl](https://timdirks.nl)
+- [@timdirks](https://codepen.io/timdirks) on Codepen
