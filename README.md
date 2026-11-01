@@ -1,7 +1,7 @@
 <div style="display: flex; justify-content: center">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TimDirks/TimDirks/TD-6/readme/name-light.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TimDirks/TimDirks/TD-6/readme/name-dark.png">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TimDirks/TimDirks/main/name-light.png">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TimDirks/TimDirks/main/name-dark.png">
       <img alt="Tim Dirks" src="name-dark.png" height="96px">
     </picture>
 </div>
