@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TimDirks/TimDirks/TD-6/readme/name-light.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TimDirks/TimDirks/TD-6/readme/name-dark.png">
+  <img alt="Tim Dirks" src="name-dark.png">
+</picture>
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
